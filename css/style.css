@@ -258,6 +258,52 @@ select:focus {
   color: #15803d;
 }
 
+.graficos-section {
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.graficos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.grafico-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.grafico-card h3 {
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.grafico-card canvas {
+  max-height: 260px;
+}
+
+.grafico-vazio {
+  text-align: center;
+  color: #9ca3af;
+  font-size: 13px;
+  padding: 2rem 0;
+}
+
+@media (max-width: 600px) {
+  .graficos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 600px) {
   .resumo {
     grid-template-columns: 1fr;

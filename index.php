@@ -87,6 +87,23 @@ $saldo = $total_entradas - $total_saidas;
         </div>
     </div>
 
+    <section class="graficos-section">
+    <h2>Visão geral</h2>
+    <div class="graficos-grid">
+        <div class="grafico-card">
+            <h3>Gastos por categoria</h3>
+            <canvas id="graficoPizza"></canvas>
+            <p class="grafico-vazio" id="vaziopizza" style="display:none">
+                Nenhuma saída neste mês.
+            </p>
+        </div>
+        <div class="grafico-card">
+            <h3>Entradas x Saídas (6 meses)</h3>
+            <canvas id="graficoBarras"></canvas>
+        </div>
+    </div>
+</section>
+
     <section class="form-section">
         <h2>Nova transação</h2>
 
@@ -203,6 +220,7 @@ $saldo = $total_entradas - $total_saidas;
     </table>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>
