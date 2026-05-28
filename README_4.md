@@ -12,6 +12,8 @@ Aplicação web para controle financeiro pessoal, desenvolvida em PHP com MySQL.
 - ✅ Visualizar **resumo financeiro** com total de entradas, saídas e saldo
 - ✅ Excluir transações
 - ✅ Saldo com indicação visual de positivo/negativo
+- ✅ Gráfico de **gastos por categoria** (rosca)
+- ✅ Gráfico de **entradas x saídas** dos últimos 6 meses
 
 ---
 
@@ -23,6 +25,7 @@ Aplicação web para controle financeiro pessoal, desenvolvida em PHP com MySQL.
 | Banco      | MySQL             |
 | Front-end  | HTML, CSS, JS     |
 | Ambiente   | XAMPP / WAMP      |
+| Gráficos   | Chart.js 4        |
 
 ---
 
@@ -30,12 +33,15 @@ Aplicação web para controle financeiro pessoal, desenvolvida em PHP com MySQL.
 
 ```
 gestor-gastos/
+├── api/
+│   └── graficos.php
 ├── css/
 │   └── style.css
 ├── db/
 │   └── conexao.php
 ├── includes/
-│   └── transacoes.php
+│   ├── transacoes.php
+│   └── graficos.php
 ├── js/
 │   └── app.js
 └── index.php
