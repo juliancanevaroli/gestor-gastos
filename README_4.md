@@ -29,6 +29,18 @@ Aplicação web para controle financeiro pessoal, desenvolvida em PHP com MySQL.
 
 ---
 
+📋 Documentação e testes
+
+Para complementar a documentação técnica, o projeto possui documentos voltados à compreensão das regras do sistema e à validação de suas funcionalidades.
+
+Regras de negócio — descreve as regras identificadas no registro e na consulta das transações.
+
+Casos de teste — documenta cenários executados para verificar os filtros por tipo, categoria e a combinação de ambos.
+
+Os documentos refletem as funcionalidades analisadas e os testes realizados até o momento. A validação das demais funcionalidades pode ser ampliada conforme a evolução do projeto.
+
+---
+
 ## 📁 Estrutura de Pastas
 
 ```
